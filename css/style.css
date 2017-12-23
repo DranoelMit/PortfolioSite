@@ -1,3 +1,4 @@
+/* TODO: add shadows to header/menu*/
 *
 {
      padding: 0;
@@ -15,6 +16,24 @@ body
      height: 30px;
      width:100%;
      position: fixed;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+#menu a
+{
+     text-decoration: none;
+     color: #eeeeee;
+     font-size: 16pt;
+}
+#menu a #slash
+{
+     opacity: 0;
+}
+#menu a:hover > #slash
+{
+transition: .25s;
+opacity: 1.0;
 }
 #sec1
 {
@@ -30,11 +49,55 @@ body
 #sec3
 {
  background-color: #cccccc;
- height: 300px;
+ height: 100px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+#sec3 img
+{
+     max-width: 50px;
+     max-height: 50px;
 }
 #pageTitle
 {
      text-align: center;
      color: #ffffff;
      font-size: 64px;
+}
+#sec2 #slash
+{
+     color: #999999;
+     font-weight: bold;
+     font-size: 36pt;
+
+}
+#sec2 h2
+{
+     font-size: 24pt;
+}
+#intro
+{
+     padding-top: 10px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+
+}
+#bio
+{
+     font-size: 14pt;
+}
+#profile
+{
+     max-width: 150px;
+     max-height: 150px;
+     border-radius: 50%;
+}
+#line
+{
+background-color: #a00019;
+height: 5px;
+border: 0;
 }
