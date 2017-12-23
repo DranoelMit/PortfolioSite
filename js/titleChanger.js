@@ -11,18 +11,24 @@ window.setInterval(function changeTitle()
           document.getElementById("pageTitle").innerHTML= wordCycle[counter];
           counter++;
      }
-
-     else if(boolSwitch){
+     else
+     {
           document.title = "Tim Leonard";
-          document.getElementById("pageTitle").innerHTML = "Tim Leonard";
-          boolSwitch = false;
-          }
+               document.getElementById("pageTitle").innerHTML = "Tim Leonard";
+               return;
+     }
+     //                   Not worth the efficiency loss rn
+     // else if(boolSwitch){
+     //      document.title = "Tim Leonard";
+     //      document.getElementById("pageTitle").innerHTML = "Tim Leonard";
+     //      boolSwitch = false;
+     //      }
+     //
+     // else {
+     //      document.title = "Tim Leonard|";
+     //           document.getElementById("pageTitle").innerHTML="Tim Leonard";
+     //      boolSwitch = true;
+     //      }
 
-     else {
-          document.title = "Tim Leonard|";
-               document.getElementById("pageTitle").innerHTML="Tim Leonard";
-          boolSwitch = true;
-          }
 
-
-}, 250);
+}, 225);

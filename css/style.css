@@ -8,7 +8,7 @@ body
 {
      display: flex;
      flex-direction: column;
-
+     background-color: #cccccc;
 }
 #menu
 {
@@ -24,7 +24,7 @@ body
 {
      text-decoration: none;
      color: #eeeeee;
-     font-size: 16pt;
+     font-size: 20pt;
 }
 #menu a #slash
 {
@@ -32,8 +32,8 @@ body
 }
 #menu a:hover > #slash
 {
-transition: .25s;
-opacity: 1.0;
+     transition: .25s;
+     opacity: 1.0;
 }
 #sec1
 {
@@ -44,15 +44,15 @@ opacity: 1.0;
 #sec2
 {
      background-color: #ffffff;
-     height: 600px;
+
 }
 #sec3
 {
- background-color: #cccccc;
- height: 100px;
- display: flex;
- align-items: center;
- justify-content: space-around;
+      height: 125 px;
+      display: flex;
+      align-items:center;
+      justify-content: space-around;
+
 }
 #sec3 img
 {
@@ -70,11 +70,6 @@ opacity: 1.0;
      color: #999999;
      font-weight: bold;
      font-size: 36pt;
-
-}
-#sec2 h2
-{
-     font-size: 24pt;
 }
 #intro
 {
@@ -83,11 +78,12 @@ opacity: 1.0;
      justify-content: center;
      flex-direction: column;
      align-items: center;
-
 }
 #bio
 {
-     font-size: 14pt;
+     font-size: 18pt;
+     text-align: center;
+     font-weight: bold;
 }
 #profile
 {
@@ -95,9 +91,19 @@ opacity: 1.0;
      max-height: 150px;
      border-radius: 50%;
 }
-#line
+.line
 {
-background-color: #a00019;
+background-color: #cccccc;
 height: 5px;
 border: 0;
+}
+#we, #ed, #sk, #at, #aw
+{
+     padding-left: 100px;
+     font-size: 36pt;
+}
+.infoTxt
+{
+     font-size: 18pt;
+     padding-left: 150px;
 }
