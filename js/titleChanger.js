@@ -1,10 +1,10 @@
 const wordCycle = ["| ", "T|", "Ti|",  "Tim|", "Tim |", "Tim L|",  "Tim Le|",
- "Tim Leo|",  "Tim Leon|", "Tim Leona|",  "Tim Leonar|" ];
+ "Tim Leo|",  "Tim Leon|", "Tim Leona|",  "Tim Leonar|",  "Tim Leonard" ];
 var counter =0;
 var fadeCounter=0;
 var boolSwitch = true;
 
-
+window.onload = function(){
 var looper = window.setInterval(function changeTitle()
 {
      if(counter < wordCycle.length){
@@ -13,9 +13,9 @@ var looper = window.setInterval(function changeTitle()
           counter++;
      }
      else{
-          document.title = "Tim Leonard";
-          document.getElementById("pageTitle").innerHTML = "Tim Leonard";
-
+          return;
      }
 
 }, 225);
+
+}
