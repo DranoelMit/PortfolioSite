@@ -26,7 +26,7 @@ body
 {
      text-align: center;
      color: #ffffff;
-     font-size: 128px;
+     font-size: 55pt;
 }
 
 #intro
@@ -154,7 +154,7 @@ border: 0;
      }
      #pageTitle
      {
-          font-size: 48pt;
+          font-size: 44pt;
      }
      .sideProject:hover
      {
